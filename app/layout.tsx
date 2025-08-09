@@ -6,7 +6,7 @@ import { Toaster } from '@/components/ui/toaster'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: "DocuMinds - Smart AI Document Analyzer",
+  title: "DocuMinds",
   description: "Analyze your documents and get intelligent, AI-powered insights instantly.",
   generator: "Dishika Vaishkiyar",
   icons: {
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "DocuMinds - Smart AI Document Analyzer",
     siteName: "DocuMinds",
-    url: "https://your-domain.com/",
+    url: "https://docu-mind-mocha.vercel.app/",
     description:
       "Analyze your documents and get intelligent, AI-powered insights instantly.",
     type: "website",

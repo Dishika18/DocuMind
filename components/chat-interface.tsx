@@ -54,7 +54,7 @@ interface Message {
     message: string
     retryAfter?: number
   }
-  modelUsed?: "groq" | "gemini"
+  modelUsed?: "gemini" | "groq"
   timestamp?: number
 }
 
@@ -154,9 +154,8 @@ export function ChatInterface({ document }: ChatInterfaceProps) {
   const [input, setInput] = useState("")
   const [isLoading, setIsLoading] = useState(false)
   const [copiedCode, setCopiedCode] = useState<string | null>(null)
-  const [selectedModel, setSelectedModel] = useState<"groq" | "gemini">("groq")
+  const [selectedModel, setSelectedModel] = useState<"gemini" | "groq">("gemini")
   const [requestCount, setRequestCount] = useState(0)
-  const [isExpanded, setIsExpanded] = useState(false)
   const { toast } = useToast()
   const scrollAreaRef = useRef<HTMLDivElement>(null)
   const inputRef = useRef<HTMLInputElement>(null)
@@ -594,13 +593,13 @@ export function ChatInterface({ document }: ChatInterfaceProps) {
               <Badge variant="outline" className="text-xs">
                 {requestCount} queries
               </Badge>
-              <Select value={selectedModel} onValueChange={(value: "groq" | "gemini") => setSelectedModel(value)}>
+              <Select value={selectedModel} onValueChange={(value: "gemini" | "groq") => setSelectedModel(value)}>
                 <SelectTrigger className="w-[100px] sm:w-[120px] h-8 text-sm">
                   <SelectValue placeholder="Model" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="groq">Groq</SelectItem>
                   <SelectItem value="gemini">Gemini</SelectItem>
+                  <SelectItem value="groq">Groq</SelectItem>
                 </SelectContent>
               </Select>
             </div>
