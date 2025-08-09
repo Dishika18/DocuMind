@@ -455,7 +455,7 @@ export function ChatInterface({ document }: ChatInterfaceProps) {
                     <div className="flex items-center gap-2">
                       <Sparkles className="w-3 h-3 text-violet-500" />
                       <Badge variant="outline" className="text-xs">
-                        {message.modelUsed === "gemini" ? "Gemini" : "Groq"}
+                        {message.modelUsed === "groq" ? "Groq" : "Gemini"}
                       </Badge>
                     </div>
                     {message.timestamp && (
@@ -654,7 +654,7 @@ export function ChatInterface({ document }: ChatInterfaceProps) {
                                 <span></span>
                               </div>
                               <span className="text-xs sm:text-sm text-slate-600 dark:text-slate-400">
-                                {selectedModel === "gemini" ? "Gemini" : "Groq"} is analyzing...
+                                {selectedModel === "groq" ? "Groq" : "Gemini"} is analyzing...
                               </span>
                             </div>
                           </CardContent>
