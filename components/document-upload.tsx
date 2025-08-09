@@ -98,7 +98,7 @@ export function DocumentUpload() {
   }
 
   const DocumentSidebar = () => (
-    <Card className="border-0 shadow-xl bg-white/95 dark:bg-slate-900/95 backdrop-blur-sm h-fit border border-slate-200 dark:border-slate-800">
+    <Card className="border-0 shadow-xl bg-white/95 dark:bg-slate-900/95 backdrop-blur-sm h-fit border-slate-200 dark:border-slate-800">
       <CardHeader className="pb-4">
         <div className="flex items-center justify-between">
           <CardTitle className="text-lg sm:text-xl text-slate-800 dark:text-slate-200 flex items-center gap-2">
@@ -268,6 +268,21 @@ export function DocumentUpload() {
           </div>
         </div>
       )}
+      {/* Simple Footer */}
+      <div className="text-center py-4 pb-8 text-base text-slate-600 dark:text-slate-400 relative z-10">
+        Made with 💕 by{' '}
+        <a 
+          href="https://github.com/dishika" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="text-violet-600 dark:text-violet-400 hover:underline font-semibold"
+        >
+          Dishika Vaishkiyar
+        </a>
+        <div className="text-xs text-slate-500 dark:text-slate-500 mt-1">
+          © 2025 All rights reserved
+        </div>
+      </div>
     </div>
   )
 }
