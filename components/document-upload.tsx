@@ -272,7 +272,7 @@ export function DocumentUpload() {
       <div className="text-center py-4 pb-8 text-base text-slate-600 dark:text-slate-400 relative z-10">
         Made with 💕 by{' '}
         <a 
-          href="https://github.com/dishika" 
+          href="https://github.com/Dishika18" 
           target="_blank" 
           rel="noopener noreferrer"
           className="text-violet-600 dark:text-violet-400 hover:underline font-semibold"
